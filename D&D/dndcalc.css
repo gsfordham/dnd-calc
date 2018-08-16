@@ -1,0 +1,118 @@
+html {
+	overflow:hidden;
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+} 
+
+body {
+	overflow-y:auto;
+	overflow-x:hidden;
+	width:100%;
+	
+	padding:0;
+	margin:0;
+	
+	background-color:rgba(200,130,130,1);
+	
+	background-image:url('media/bg.png');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+#bg-charas {
+	position:fixed;
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	
+	/*background-color:rgba(230,230,230,0.25);*/
+	
+	z-index:-1;
+}
+
+#chara01 {
+	position:absolute;
+	right:0;
+	bottom:0;
+	
+	width:50%;
+	height:100%;
+	
+	/*background-color:rgba(230,230,230,0.25);*/
+	
+}
+
+#content {
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	height:100%;
+	
+	z-index:2;
+}
+
+#chara-info-div {
+	width:100%;
+	
+	background-color:rgba(200,200,200,0.75);
+	
+	background-image:url('media/banner.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:left top;
+	
+	text-align:right;
+	font-weight:bold;
+}
+
+#stat-table {
+	width:100%;
+}
+
+#stat-table, #skill-table {
+	border-collapse:separate;
+	text-align:center;
+	
+	margin-bottom:1px;
+}
+
+#stat-table tr:nth-child(even), #skill-table tr:nth-child(odd){
+	background-color:rgba(220,220,220,0.85);
+}
+
+#stat-table tr:nth-child(odd), #skill-table tr:nth-child(even){
+	background-color:rgba(200,200,200,0.85);
+}
+
+#stat-table tr:first-child , #skill-table tr:first-child {
+	background-color:rgba(175,175,175,0.85);
+}
+
+#stat-table tr:last-child {
+	font-size:1.05em;
+}
+
+#skill-table td:last-child {
+	font-size:1.1em;
+}
+
+.ct-txt-norm {
+	width:85%;
+}
+
+input[type=text], input[type=number] {
+	background-color:rgba(230,230,230,0.85);
+	font-weight:bold;
+}
+
+input[type=text] {
+	text-align:center;
+}
+
+input[type=number] {
+	text-align:right;
+}
